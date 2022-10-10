@@ -137,6 +137,7 @@ typings/
 /front/build/
 react-nodebird.pem
 twitter.pem
+capston.pem
 node_modules
 .env
 .next
