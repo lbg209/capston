@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import PropTypes from "prop-types";
 import { PlusOutlined } from "@ant-design/icons";
 import ImagesZoom from "./ImagesZoom";
+import { backUrl } from "../config/config";
 
 const PostImages = ({ images }) => {
   const [showImagesZoom, setShowImagesZoom] = useState(false);
@@ -19,7 +20,7 @@ const PostImages = ({ images }) => {
       <>
         <img
           role="presentation"
-          src={`http://localhost:3065/${images[0].src}`}
+          src={`${backUrl}/${images[0].src}`}
           alt={images[0].src}
           onClick={onZoom}
         />
@@ -34,14 +35,14 @@ const PostImages = ({ images }) => {
         <img
           role="presentation"
           style={{ width: "50%", display: "inline-block" }}
-          src={`http://localhost:3065/${images[0].src}`}
+          src={`${backUrl}/${images[0].src}`}
           alt={images[0].src}
           onClick={onZoom}
         />
         <img
           role="presentation"
           style={{ width: "50%", display: "inline-block" }}
-          src={`http://localhost:3065/${images[1].src}`}
+          src={`${backUrl}/${images[1].src}`}
           alt={images[1].src}
           onClick={onZoom}
         />
@@ -55,7 +56,7 @@ const PostImages = ({ images }) => {
         <img
           role="presentation"
           style={{ width: "50%" }}
-          src={`http://localhost:3065/${images[0].src}`.src}
+          src={`${backUrl}/${images[0].src}`.src}
           alt={images[0].src}
           onClick={onZoom}
         />
