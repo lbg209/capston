@@ -9,7 +9,7 @@ import UserProfile from "./UserProfile";
 import LoginForm from "./LoginForm";
 import useInput from "../hooks/useInput";
 import Router from "next/router";
-import Anothersite from "./anothersite";
+import Anothersite from "./Anothersite";
 
 const SearchInput = styled(Input.Search)`
   vertical-align: middle;
