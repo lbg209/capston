@@ -14,8 +14,8 @@ const StyleComponent = styled.div`
     align-items: center;
     img {
       margin-top: 5px;
-      width: 150px;
-      height: 100px;
+      width: 300px;
+      height: 200px;
     }
   }
 `;
@@ -24,7 +24,7 @@ const Anothersite = () => {
   return (
     <StyleComponent>
       <div>
-        <h5>다른 공모전 사이트</h5>
+        <h3>다른 공모전 사이트</h3>
         <div className="image-box">
           <a href="https://www.wevity.com/" target="_blank" rel="noreferrer">
             <img
