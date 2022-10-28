@@ -9,6 +9,7 @@ import UserProfile from "./UserProfile";
 import LoginForm from "./LoginForm";
 import useInput from "../hooks/useInput";
 import Router from "next/router";
+import Anothersite from "./anothersite";
 
 const SearchInput = styled(Input.Search)`
   vertical-align: middle;
@@ -43,7 +44,7 @@ const AppLayout = ({ children }) => {
       <Menu mode="horizontal">
         <Menu.Item>
           <Link href="/">
-            <a>트위터</a>
+            <a>공모</a>
           </Link>
         </Menu.Item>
         <Menu.Item>
@@ -73,13 +74,7 @@ const AppLayout = ({ children }) => {
           {children}
         </Col>
         <Col xs={24} md={6}>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            구글
-          </a>
+          <Anothersite />
         </Col>
       </Row>
     </div>

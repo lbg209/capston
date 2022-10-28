@@ -9,7 +9,7 @@ const NodeBirde = ({ Component }) => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>트위터</title>
+        <title>공모</title>
       </Head>
 
       <Component />
