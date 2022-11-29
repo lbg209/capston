@@ -28,7 +28,7 @@ const Profile = () => {
     `${backUrl}/user/followings?limit=${followingsLimit}`,
     fetcher
   );
-
+  //
   useEffect(() => {
     if (!(me && me.id)) {
       Router.push("/");
